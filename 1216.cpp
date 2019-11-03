@@ -1,22 +1,21 @@
 #include <iostream>
-#include <stdio.h>
 #include <iomanip>
 using namespace std;
 
 int main(int argc, char const *argv[]){
     string nome;
-    int total=0;
-    float dist;
-    int cont;
+    long double total=0;
+    long long int dist=0;
+    int cont=0;
     while(getline(cin,nome)){
-        scanf("%d",&dist);
+        cin>>dist;
+        cin.ignore();
         total+=dist;
-        cont++; 
-        printf("%d",dist);
+        cont++;
     }
     cout<<fixed;
     cout<<setprecision(1);
-    float resp = dist/cont; 
+    double resp = total/cont;
     cout<<resp<<endl;
     return 0;
 }
