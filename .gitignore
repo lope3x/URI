@@ -1,0 +1,7 @@
+.vscode/
+*.exe
+*.txt
+*/
+*.out
+*.tx
+*.class
